@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+	<link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet">
+	<link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+	<div class="container">
+		<div class="sidebar">
+			<div class="top">
+				<div class="logo">
+					<img src="" alt="">
+					<h2>Admin Bord</h2>
+				</div>
+
+				<div class="close">
+					<span class="material-icons">
+						cancel
+						</span>
+				</div>
+			</div>
+
+			<div class="menu-container">
+			<nav class="nav">
+				<ul class="menu">
+					<li class="Quotation">
+						<div class="icon-link menu-link">
+							<a href="#">
+							<span class="material-icons">
+								analytics
+							</span>
+							<h2 class="nav-name">Quotation</h2>
+						</a>
+						<span class="material-icons drop">
+							expand_more
+							</span>
+						</div>
+						<ul class="sub-menu">
+							<li><a href="./index.html">Client List</a></li>
+							<li><a href="./quotion_request.html">Quotation Request</a></li>
+							<li><a href="./RFQ_replies.html">Quotations</a></li>
+							<li><a href="./cost_variables.html" class="sub-menu_active">Cost Variables</a></li>
+							<li><a href="./service.html">Service Offerrigs</a></li>
+						</ul>
+					</li>
+
+					<li>
+						<div class="icon-link">
+							<a href="#">
+								<span class="material-icons">
+									manage_history
+									</span>
+							<h2 class="nav-name">Project Management</h2>
+						</a>
+						<span class="material-icons drop">
+							expand_more
+							</span>
+						</div>
+						<ul class="sub-menu">
+							<li><a href="./project_management.html">Projects</a></li>
+						</ul>
+					</li>
+
+					<li>
+						<div class="icon-link">
+							<a href="#">
+								<span class="material-icons">
+									memory
+									</span>
+							<h2 class="nav-name">Procurement Management</h2>
+						</a>
+						<span class="material-icons drop">
+							expand_more
+							</span>
+						</div>
+						<ul class="sub-menu">
+							<li><a href="./procurement_management_material.html">Material/Equipments</a></li>
+							<li><a href="./procurement_material_comparison.html">Material Comparison</a></li>
+							<li><a href="./procurement_management_suppliers.html">Suppliers</a></li>
+							<li><a href="./procurement_purchase_order.html">Purchase Orders</a></li>
+							<li><a href="./procurement_contruction_qcdr.html">Contruction Quality Control Daily Report</a></li>
+						</ul>
+					</li>
+
+					<li>
+						<div class="icon-link">
+							<a href="#">
+								<span class="material-icons">
+									attach_money
+									</span>
+							<h2 class="nav-name">Financial & Projection</h2>
+						</a>
+						<span class="material-icons expand drop">
+							expand_more
+							</span>
+						</div>
+						<ul class="sub-menu">
+							<li><a href="./financial_receivables.html">Receivables</a></li>
+							<li><a href="./financial_receivablles_payout.html">Payouts</a></li>
+							<li><a href="./financial_credit_facitities.html">Credit Facilities</a></li>
+							<li><a href="#">Dashbord</a></li>
+							<li><a href="#">Profit & Loss</a></li>
+							<li><a href="./procurement_cash_flow_calculator.html">Cash Flow Calculator</a></li>
+						</ul>
+					</li>
+
+					<li>
+						<div class="icon-link">
+							<a href="#">
+								<span class="material-icons">
+									construction
+									</span>
+							<h2 class="nav-name">Construction Log Automation</h2>
+						</a>
+						<span class="material-icons drop">
+							expand_more
+							</span>
+						</div>
+						<ul class="sub-menu">
+							<li><a href="./construction_log.html">List Of Construction Log</a></li>
+						</ul>
+					</li>
+
+					<li>
+						<div class="icon-link">
+							<a href="#">
+								<span class="material-icons">
+									tips_and_updates
+									</span>
+							<h2 class="nav-name">Computer Vision Detection VR Modelling</h2>
+						</a>
+						<span class="material-icons drop">
+							expand_more
+							</span>
+						</div>
+						<ul class="sub-menu">
+							<li><a href="#">List Of Construction Log</a></li>
+						</ul>
+					</li>
+				</ul>
+			</nav>
+			</div>
+
+				<a href="#" class="log-out">
+					<span class="material-icons">
+						logout
+						</span>
+						<h3>Log out</h3>
+					</a>
+		</div>
+
+		<main class="main">
+			<span class="material-icons menu-icon">
+				menu
+				</span>
+			<h1 class="variable_cost">Create Cost Variable</h1>
+
+			<!-- Form -->
+			<form action="" class="first_form">
+				<div class="variable_type">
+					<div class="variable_type_eng">
+						<label for="variable_type">Variable Type(English)</label>
+								<select id="variable_type">
+								<option value="option1">Option 1</option>
+								<option value="option2">Option 2</option>
+								<option value="option3">Option 3</option>
+						</select>
+					</div>
+
+					<div class="variable_type_chinese">
+						<label for="variable_type">Variable Type(Chinese)</label>
+								<select id="variable_type">
+								<option value="option1">Option 1</option>
+								<option value="option2">Option 2</option>
+								<option value="option3">Option 3</option>
+						</select>
+					</div>
+				</div>
+
+				<div class="variable_name">
+					<div class="variable_name_eng">
+						<label for="variable_name_eng">Variable Name (English)</label>
+						<input type="text" name="variable_name_eng" id="">
+					</div>
+					<div class="variable_name_chinese">
+						<label for="variable_name_chinese">Variable Name (Chinese)</label>
+						<input type="text" name="variable_name_chinese" id="">
+					</div>
+				</div>
+				
+				<div class="variable_name">
+					<div class="variable_name_eng">
+						<label for="unit_quote">Unit Quote Price</label>
+						<input type="text" name="unit_quote" id="">
+					</div>
+					<div class="variable_name_eng">
+						<label for="cost_unit">Unit Cost</label>
+						<input type="text" name="cost_unit" id="">
+					</div>
+				</div>
+
+
+				<div class="variable_name">
+					<div class="variable_name_eng">
+						<label for="unit">Unit</label>
+						<input type="text" name="unit" id="">
+					</div>
+					<div class="variable_name_eng">
+						<div class="btn variable_btn">
+							<button>Save</button>
+						</div>
+					</div>
+				</div>
+				
+			</form>
+		</main>
+	</div>
+	<script src="assets/js/script.js"></script>
+</body>
+</html>

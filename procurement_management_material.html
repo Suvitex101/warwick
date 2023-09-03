@@ -1,0 +1,564 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+	<link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet">
+	<link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+	<div class="container">
+		<div class="sidebar">
+			<div class="top">
+				<div class="logo">
+					<img src="" alt="">
+					<h2>Admin Bord</h2>
+				</div>
+
+				<div class="close">
+					<span class="material-icons">
+						cancel
+						</span>
+				</div>
+			</div>
+
+			<div class="menu-container">
+			<nav class="nav">
+				<ul class="menu">
+					<li>
+						<div class="icon-link">
+							<a href="#">
+							<span class="material-icons">
+								analytics
+							</span>
+							<h2 class="nav-name">Quotation</h2>
+						</a>
+						<span class="material-icons drop">
+							expand_more
+							</span>
+						</div>
+						<ul class="sub-menu">
+							<li><a href="./index.html">Client List</a></li>
+							<li><a href="./quotion_request.html">Quotation Request</a></li>
+							<li><a href="./RFQ_replies.html">Quotations</a></li>
+							<li><a href="./cost_variables.html">Cost Variables</a></li>
+							<li><a href="./service.html">Service Offerrigs</a></li>
+						</ul>
+					</li>
+
+					<li>
+						<div class="icon-link">
+							<a href="#">
+								<span class="material-icons">
+									manage_history
+									</span>
+							<h2 class="nav-name">Project Management</h2>
+						</a>
+						<span class="material-icons drop">
+							expand_more
+							</span>
+						</div>
+						<ul class="sub-menu">
+							<li><a href="./project_management.html">Projects</a></li>
+						</ul>
+					</li>
+
+					<li class="Quotation">
+						<div class="icon-link menu-link">
+							<a href="#">
+								<span class="material-icons">
+									memory
+									</span>
+							<h2 class="nav-name">Procurement Management</h2>
+						</a>
+						<span class="material-icons drop">
+							expand_more
+							</span>
+						</div>
+						<ul class="sub-menu">
+							<li><a href="./procurement_management_material.html" class="sub-menu_active">Material/Equipments</a></li>
+							<li><a href="./procurement_material_comparison.html">Material Comparison</a></li>
+							<li><a href="./procurement_management_suppliers.html">Suppliers</a></li>
+							<li><a href="./procurement_purchase_order.html">Purchase Orders</a></li>
+							<li><a href="./procurement_contruction_qcdr.html">Contruction Quality Control Daily Report</a></li>
+						</ul>
+					</li>
+
+					<li>
+						<div class="icon-link">
+							<a href="#">
+								<span class="material-icons">
+									attach_money
+									</span>
+							<h2 class="nav-name">Financial & Projection</h2>
+						</a>
+						<span class="material-icons expand drop">
+							expand_more
+							</span>
+						</div>
+						<ul class="sub-menu">
+							<li><a href="./financial_receivables.html">Receivables</a></li>
+							<li><a href="./financial_receivablles_payout.html">Payouts</a></li>
+							<li><a href="./financial_credit_facitities.html">Credit Facilities</a></li>
+							<li><a href="#">Dashbord</a></li>
+							<li><a href="#">Profit & Loss</a></li>
+							<li><a href="./procurement_cash_flow_calculator.html">Cash Flow Calculator</a></li>
+						</ul>
+					</li>
+
+					<li>
+						<div class="icon-link">
+							<a href="#">
+								<span class="material-icons">
+									construction
+									</span>
+							<h2 class="nav-name">Construction Log Automation</h2>
+						</a>
+						<span class="material-icons drop">
+							expand_more
+							</span>
+						</div>
+						<ul class="sub-menu">
+							<li><a href="./construction_log.html">List Of Construction Log</a></li>
+						</ul>
+					</li>
+
+					<li>
+						<div class="icon-link">
+							<a href="#">
+								<span class="material-icons">
+									tips_and_updates
+									</span>
+							<h2 class="nav-name">Computer Vision Detection VR Modelling</h2>
+						</a>
+						<span class="material-icons drop">
+							expand_more
+							</span>
+						</div>
+						<ul class="sub-menu">
+							<li><a href="#">List Of Construction Log</a></li>
+						</ul>
+					</li>
+				</ul>
+			</nav>
+			</div>
+
+				<a href="#" class="log-out">
+					<span class="material-icons">
+						logout
+						</span>
+						<h3>Log out</h3>
+					</a>
+		</div>
+
+		<main class="main">
+			<span class="material-icons menu-icon">
+				menu
+				</span>
+			<h2 class="Service_name">Materials/Equipment</h2>
+
+			<div class="rfq filter_btn cost_btn">
+				<div class="btn">
+					<button>Compare</button>
+					<button class="filter"><span class="material-icons">
+						tune
+						</span> <p>Filter</p></button>
+					<button>Manage Category</button>
+					<button>Create</button>
+				</div>
+			</div>
+
+			<div class="table-container">
+				<table class="client-list">
+					<thead>
+						<tr>
+							<th>Product Code</th>
+							<th>Item</th>
+							<th>Category</th>
+							<th>Supplier</th>
+							<th>Unit</th>
+							<th>Unit Cost</th>
+							<th>Lead Time (Day)</th>
+							<th>Delivery Time (Day)</th>
+							<th>Variables</th>
+							<th>MOQ</th>
+							<th>Lot Size</th>
+							<th>Max. Output</th>
+							<th>Terms</th>
+							<th>Port</th>
+							<th>Logistic</th>
+							<th>Action</th>
+						</tr>
+					</thead>
+	
+					<tbody>
+
+						<tr>
+							<td>P001</td>
+							<td>⽌滑磚</td>
+							<td>瓷磚</td>
+							<td>BKEE</td>
+							<td>平⽅尺/
+								塊</td>
+							<td>$24</td>
+							<td>4</td>
+							<td>1</td>
+							<td></td>
+							<td>90塊</td>
+							<td>30</td>
+							<td></td>
+							<td>FOB</td>
+							<td>Izmir</td>
+							<td></td>
+							<td><div class="payroll_btn2">
+								<a href="#">View warranty</a>
+								<a href="#">View lease terms</a>
+							</div></td>
+						</tr>
+
+						<tr>
+							<td>P002</td>
+							<td>填縫劑</td>
+							<td>瓷磚⽯材</td>
+							<td>BKEE</td>
+							<td>Kg</td>
+							<td>$50</td>
+							<td>5</td>
+							<td>1</td>
+							<td></td>
+							<td>20Kg</td>
+							<td></td>
+							<td></td>
+							<td>FOB</td>
+							<td>Dalian</td>
+							<td></td>
+							<td><div class="payroll_btn2">
+								<a href="#">View warranty</a>
+								<a href="#">View lease terms</a>
+							</div></td>
+						</tr>
+
+						<tr>
+							<td>M-TC</td>
+							<td>Terracotta tiles</td>
+							<td>瓷磚</td>
+							<td>hometreschic srl</td>
+							<td>sq. m</td>
+							<td>738</td>
+							<td>15</td>
+							<td>60</td>
+							<td></td>
+							<td>100</td>
+							<td>30</td>
+							<td></td>
+							<td>TA</td>
+							<td>Livorno Genoa</td>
+							<td></td>
+							<td><div class="payroll_btn2">
+								<a href="#">View warranty</a>
+								<a href="#">View lease terms</a>
+							</div></td>
+						</tr>
+
+						<tr>
+							<td>P004</td>
+							<td>⼤理⽯紋地
+								磚</td>
+							<td>瓷磚</td>
+							<td>Mattex</td>
+							<td>平⽅尺/
+								塊</td>
+							<td>$20</td>
+							<td>4</td>
+							<td>1</td>
+							<td></td>
+							<td>90塊</td>
+							<td>30</td>
+							<td></td>
+							<td>FOB</td>
+							<td>Izmir</td>
+							<td></td>
+							<td><div class="payroll_btn2">
+								<a href="#">View warranty</a>
+								<a href="#">View lease terms</a>
+							</div></td>
+						</tr>
+
+						<tr>
+							<td>DX51D</td>
+							<td>Corrugated 
+								Roof Sheet</td>
+							<td>Steel 
+								Products</td>
+							<td>Shandong 
+								Jinyuan Metal 
+								Technology 
+								Co.,LTD</td>
+							<td>ton</td>
+							<td>$900</td>
+							<td>15</td>
+							<td>15-21</td>
+							<td></td>
+							<td>1 ton</td>
+							<td></td>
+							<td></td>
+							<td>FOB</td>
+							<td>Tianjin</td>
+							<td>Ocean/
+								Air 
+								Transpo
+								rtation</td>
+							<td><div class="payroll_btn2">
+								<a href="#">View warranty</a>
+								<a href="#">View lease terms</a>
+							</div></td>
+						</tr>
+
+						<tr>
+							<td>TMT 7</td>
+							<td>Steel Rebar</td>
+							<td>Steel 
+								Products</td>
+							<td>Wuxi Tianzhu 
+								Special Steel 
+								Co., Ltd.</td>
+							<td>ton</td>
+							<td>$1</td>
+							<td>10</td>
+							<td>7-15</td>
+							<td></td>
+							<td>10 tons</td>
+							<td></td>
+							<td>5000 Ton/
+								Tons per 
+								Week</td>
+							<td>CFR 
+								CIF 
+								FOB</td>
+							<td>tianjin</td>
+							<td>Ocean/Air Transpotation</td>
+							<td><div class="payroll_btn2">
+								<a href="#">View warranty</a>
+								<a href="#">View lease terms</a>
+							</div></td>
+						</tr>
+
+						<tr>
+							<td>PEDWCP</td>
+							<td>Plastic 
+								Double Wall 
+								Corrugated 
+								DWC Drain 
+								Culvert Pipe</td>
+							<td>Plastic 
+								Tubes</td>
+							<td>Beijing 
+								Zhongcaiwan
+								xin Science & 
+								Technology 
+								Co,.LTD</td>
+							<td>meter</td>
+							<td>$1</td>
+							<td>1</td>
+							<td>15</td>
+							<td></td>
+							<td>1 meter</td>
+							<td></td>
+							<td>100000 
+								Meter/
+								Meters per 
+								Month</td>
+							<td>FOB</td>
+							<td>Tianjin</td>
+							<td>Ocean 
+								Transpo
+								rtation</td>
+							<td><div class="payroll_btn2">
+								<a href="#">View warranty</a>
+								<a href="#">View lease terms</a>
+							</div></td>
+						</tr>
+
+						<tr>
+							<td>QDX60-7-1.5</td>
+							<td>Dirty water 
+								drainage 
+								sump 
+								submersible 
+								water pump</td>
+							<td>Plastic 
+								Tubes</td>
+							<td>Beijing 
+								Zhongcaiwan
+								xin Science & 
+								Technology 
+								Co,.LTD</td>
+							<td>meter</td>
+							<td>$1</td>
+							<td>1</td>
+							<td>15</td>
+							<td></td>
+							<td>1 meter</td>
+							<td></td>
+							<td>100000 
+								Meter/
+								Meters per 
+								Month</td>
+							<td>FOB</td>
+							<td>Tianjin</td>
+							<td>Ocean 
+								Transpo
+								rtation</td>
+							<td><div class="payroll_btn2">
+								<a href="#">View warranty</a>
+								<a href="#">View lease terms</a>
+							</div></td>
+						</tr>
+
+						<tr>
+							<td>QDX60-7-
+								1.5</td>
+							<td>Dirty water 
+								drainage 
+								sump 
+								submersible 
+								water pump</td>
+							<td>Pumps & 
+								Parts</td>
+							<td>Grandfar 
+								Pumps Co.,Ltd</td>
+							<td>piece (1200L/min)</td>
+							<td>$109.7</td>
+							<td>45</td>
+							<td>30-40</td>
+							<td></td>
+							<td>50 peices>
+							<td></td>
+							<td></td>
+							<td>CIF</td>
+							<td>Ningbo/
+								Shanghai</td>
+							<td>Ocean/
+								Air 
+								Transpo
+								rtation</td>
+							<td><div class="payroll_btn2">
+								<a href="#">View warranty</a>
+								<a href="#">View lease terms</a>
+							</div></td>
+						</tr>
+
+						<tr>
+							<td>EC-300</td>
+							<td>EC-300 
+								Electric 
+								Hydraulic 
+								Armoured 
+								Cable Cutt</td>
+							<td>Hydraulic 
+								Tools</td>
+							<td>Zhejiang 
+								Emeads Tools 
+								Co., Ltd.</td>
+							<td>Piece</td>
+							<td>$175</td>
+							<td>20</td>
+							<td>30</td>
+							<td></td>
+							<td>10 peices</td>
+							<td></td>
+							<td>1000 
+								Piece/
+								Pieces per 
+								Month</td>
+							<td>FOC</td>
+							<td>Ningbo/
+								Shanghai</td>
+							<td>Truck</td>
+							<td><div class="payroll_btn2">
+								<a href="#">View warranty</a>
+								<a href="#">View lease terms</a>
+							</div></td>
+						</tr>
+
+						<tr>
+							<td>9020</td>
+							<td>Electric 
+								Angle 
+								Grinder</td>
+							<td>Power 
+								Tools</td>
+							<td>Nantong 
+								Kundi Power 
+								Tools Co., Ltd</td>
+							<td>Piece(5
+								8.5*19.
+								5*12.5c
+								m)</td>
+							<td>$40</td>
+							<td>30</td>
+							<td>15</td>
+							<td></td>
+							<td>300 peices</td>
+							<td></td>
+							<td>20000 
+								Piece/
+								Pieces per 
+								Month</td>
+							<td>FOB</td>
+							<td>shanghai, 
+								ningbo, 
+								yiwu</td>
+							<td>Ocean 
+								Transpo
+								rtation</td>
+							<td><div class="payroll_btn2">
+								<a href="#">View warranty</a>
+								<a href="#">View lease terms</a>
+							</div></td>
+						</tr>
+
+						<tr>
+							<td>JJ-5</td>
+							<td>Cement 
+								Mortar Mixer</td>
+							<td>Testing 
+								Equipment</td>
+							<td>Hebei 
+								Zhongbo 
+								Ruike 
+								Instrument 
+								Manufacturin
+								g Co.,Ltd</td>
+							<td>5L/unit</td>
+							<td>$300</td>
+							<td>7</td>
+							<td>15</td>
+							<td></td>
+							<td>5</td>
+							<td></td>
+							<td>100 Unit/
+								Units per 
+								Month</td>
+							<td>FOB</td>
+							<td>Tianjin</td>
+							<td>Ocean/
+								Air 
+								Transpo
+								rtation</td>
+							<td><div class="payroll_btn2">
+								<a href="#">View warranty</a>
+								<a href="#">View lease terms</a>
+							</div></td>
+						</tr>
+							
+					</tbody>
+				</table>
+			</div>
+		</main>
+	</div>
+	<script src="assets/js/script.js"></script>
+</body>
+</html>

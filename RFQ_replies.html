@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+	<link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet">
+	<link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+	<div class="container">
+		<div class="sidebar">
+			<div class="top">
+				<div class="logo">
+					<img src="" alt="">
+					<h2>Admin Bord</h2>
+				</div>
+
+				<div class="close">
+					<span class="material-icons">
+						cancel
+						</span>
+				</div>
+			</div>
+
+			<div class="menu-container">
+			<nav class="nav">
+				<ul class="menu">
+					<li class="Quotation">
+						<div class="icon-link menu-link">
+							<a href="#">
+							<span class="material-icons">
+								analytics
+							</span>
+							<h2 class="nav-name">Quotation</h2>
+						</a>
+						<span class="material-icons drop">
+							expand_more
+							</span>
+						</div>
+						<ul class="sub-menu">
+							<li><a href="./index.html">Client List</a></li>
+							<li><a href="./quotion_request.html" class="sub-menu_active">Quotation Request</a></li>
+							<li><a href="./RFQ_replies.html">Quotations</a></li>
+							<li><a href="./cost_variables.html">Cost Variables</a></li>
+							<li><a href="./service.html">Service Offerrigs</a></li>
+						</ul>
+					</li>
+
+					<li>
+						<div class="icon-link">
+							<a href="#">
+								<span class="material-icons">
+									manage_history
+									</span>
+							<h2 class="nav-name">Project Management</h2>
+						</a>
+						<span class="material-icons drop">
+							expand_more
+							</span>
+						</div>
+						<ul class="sub-menu">
+							<li><a href="./project_management.html">Projects</a></li>
+						</ul>
+					</li>
+
+					<li>
+						<div class="icon-link">
+							<a href="#">
+								<span class="material-icons">
+									memory
+									</span>
+							<h2 class="nav-name">Procurement Management</h2>
+						</a>
+						<span class="material-icons drop">
+							expand_more
+							</span>
+						</div>
+						<ul class="sub-menu">
+							<li><a href="./procurement_management_material.html">Material/Equipments</a></li>
+							<li><a href="./procurement_material_comparison.html">Material Comparison</a></li>
+							<li><a href="./procurement_management_suppliers.html">Suppliers</a></li>
+							<li><a href="./procurement_purchase_order.html">Purchase Orders</a></li>
+							<li><a href="./procurement_contruction_qcdr.html">Contruction Quality Control Daily Report</a></li>
+						</ul>
+					</li>
+
+					<li>
+						<div class="icon-link">
+							<a href="#">
+								<span class="material-icons">
+									attach_money
+									</span>
+							<h2 class="nav-name">Financial & Projection</h2>
+						</a>
+						<span class="material-icons expand drop">
+							expand_more
+							</span>
+						</div>
+						<ul class="sub-menu">
+							<li><a href="./financial_receivables.html">Receivables</a></li>
+							<li><a href="./financial_receivablles_payout.html">Payouts</a></li>
+							<li><a href="./financial_credit_facitities.html">Credit Facilities</a></li>
+							<li><a href="#">Dashbord</a></li>
+							<li><a href="#">Profit & Loss</a></li>
+							<li><a href="./procurement_cash_flow_calculator.html">Cash Flow Calculator</a></li>
+						</ul>
+					</li>
+
+					<li>
+						<div class="icon-link">
+							<a href="#">
+								<span class="material-icons">
+									construction
+									</span>
+							<h2 class="nav-name">Construction Log Automation</h2>
+						</a>
+						<span class="material-icons drop">
+							expand_more
+							</span>
+						</div>
+						<ul class="sub-menu">
+							<li><a href="./construction_log.html">List Of Construction Log</a></li>
+						</ul>
+					</li>
+
+					<li>
+						<div class="icon-link">
+							<a href="#">
+								<span class="material-icons">
+									tips_and_updates
+									</span>
+							<h2 class="nav-name">Computer Vision Detection VR Modelling</h2>
+						</a>
+						<span class="material-icons drop">
+							expand_more
+							</span>
+						</div>
+						<ul class="sub-menu">
+							<li><a href="#">List Of Construction Log</a></li>
+						</ul>
+					</li>
+				</ul>
+			</nav>
+			</div>
+
+				<a href="#" class="log-out">
+					<span class="material-icons">
+						logout
+						</span>
+						<h3>Log out</h3>
+					</a>
+		</div>
+
+		<main class="main client_project">
+			<span class="material-icons menu-icon">
+				menu
+				</span>
+			<h1>RFQ Replies</h1>
+
+			<div class="btn">
+				<button>Create Reply</button>
+			</div>
+				<!-- Table -->
+				<div class="table-container">
+				<table class="client-list">
+					<thead>
+						<tr>
+							<th>RFQ ID</th>
+							<th>Quote ID</th>
+							<th>Client Name</th>
+							<th>Title</th>
+							<th>Date Start</th>
+							<th>Expected Duration</th>
+							<th>RFQ Budget</th>
+							<th>Quote Price</th>
+							<th>Reply Date</th>
+							<th>Action</th>
+						</tr>
+					</thead>
+	
+					<tbody>
+						<tr>
+							<td>RF-018</td>
+							<td>RF-016</td>
+							<td>標威有限公司</td>
+							<td>尖沙咀安年⼤廈改造</td>
+							<td>20/09/2023</td>
+							<td>4 months</td>
+							<td>3,500,000</td>
+							<td>3,500,000</td>
+							<td>08/08/2023</td>
+							<td><a href="#">View Details</a></td>
+						</tr>
+
+						<tr>
+							<td>RF-017</td>
+							<td>RF-015</td>
+							<td>宏⾼⼯程(香港)有限公司</td>
+							<td>溫雅閣樓宇維修</td>
+							<td>03/09/2023</td>
+							<td>2 months</td>
+							<td>4,500,000</td>
+							<td>4,508,000</td>
+							<td>01/08/2023</td>
+							<td><a href="#">View Details</a></td>
+						</tr>
+						<tr>
+							<td>RF-015</td>
+							<td>RF-011</td>
+							<td>逸昇建築有限公司</td>
+							<td>新蒲崗強制驗樓及驗窗計劃維修⼯程</td>
+							<td>25/08/2023</td>
+							<td>3 months</td>
+							<td>20,000</td>
+							<td>25,000</td>
+							<td>01/08/2023</td>
+							<td><a href="#">View Details</a></td>
+						</tr>
+						<tr>
+							<td>RF-012</td>
+							<td>RF-010</td>
+							<td>德昌(⽂記)建築⼯程有限公司</a></td>
+							<td>香港薄扶林置富花園维修⼯程</td>
+							<td>16/08/2023</td>
+							<td>4 months</td>
+							<td>900,000</td>
+							<td>920,000</td>
+							<td>18/07/2023</td>
+							<td><a href="#">View Details</a></td>
+						</tr>
+						<tr>
+							<td>RF-010</td>
+							<td>RF-009</td>
+							<td>Rainbow Decoration Engineering Ltd</td>
+							<td>尚⼼花園⼤堂維修</td>
+							<td>10/08/2023</td>
+							<td>16 weeks</td>
+							<td>50,000</td>
+							<td>55,000</td>
+							<td>04/07/2023</td>
+							<td><a href="#">View Details</a></td>
+						</tr>
+						<tr>
+							<td>RF-009</td>
+							<td>RF-007</td>
+							<td>宏⾼⼯程(香港)有限公司</td>
+							<td>LED廣告牌入則</td>
+							<td>03/08/2023</td>
+							<td>2 weeks</td>
+							<td>140,000</td>
+							<td>138,000</td>
+							<td>31/06/2023</td>
+							<td><a href="./quotation_details.html">View Details</a></td>
+						</tr>
+					</tbody>
+				</table>
+			</div>
+		</main>
+	</div>
+	<script src="assets/js/script.js"></script>
+</body>
+</html>

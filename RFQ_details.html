@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+	<link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet">
+	<link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+	<div class="container">
+		<div class="sidebar">
+			<div class="top">
+				<div class="logo">
+					<img src="" alt="">
+					<h2>Admin Bord</h2>
+				</div>
+
+				<div class="close">
+					<span class="material-icons">
+						cancel
+						</span>
+				</div>
+			</div>
+
+			<div class="menu-container">
+			<nav class="nav">
+				<ul class="menu">
+					<li class="Quotation">
+						<div class="icon-link menu-link">
+							<a href="#">
+							<span class="material-icons">
+								analytics
+							</span>
+							<h2 class="nav-name">Quotation</h2>
+						</a>
+						<span class="material-icons drop">
+							expand_more
+							</span>
+						</div>
+						<ul class="sub-menu">
+							<li><a href="./index.html">Client List</a></li>
+							<li><a href="./quotion_request.html" class="sub-menu_active">Quotation Request</a></li>
+							<li><a href="./RFQ_replies.html">Quotations</a></li>
+							<li><a href="./cost_variables.html">Cost Variables</a></li>
+							<li><a href="./service.html">Service Offerrigs</a></li>
+						</ul>
+					</li>
+
+					<li>
+						<div class="icon-link">
+							<a href="#">
+								<span class="material-icons">
+									manage_history
+									</span>
+							<h2 class="nav-name">Project Management</h2>
+						</a>
+						<span class="material-icons drop">
+							expand_more
+							</span>
+						</div>
+						<ul class="sub-menu">
+							<li><a href="./project_management.html">Projects</a></li>
+						</ul>
+					</li>
+
+					<li>
+						<div class="icon-link">
+							<a href="#">
+								<span class="material-icons">
+									memory
+									</span>
+							<h2 class="nav-name">Procurement Management</h2>
+						</a>
+						<span class="material-icons drop">
+							expand_more
+							</span>
+						</div>
+						<ul class="sub-menu">
+							<li><a href="./procurement_management_material.html">Material/Equipments</a></li>
+							<li><a href="./procurement_material_comparison.html">Material Comparison</a></li>
+							<li><a href="./procurement_management_suppliers.html">Suppliers</a></li>
+							<li><a href="./procurement_purchase_order.html">Purchase Orders</a></li>
+							<li><a href="./procurement_contruction_qcdr.html">Contruction Quality Control Daily Report</a></li>
+						</ul>
+					</li>
+
+					<li>
+						<div class="icon-link">
+							<a href="#">
+								<span class="material-icons">
+									attach_money
+									</span>
+							<h2 class="nav-name">Financial & Projection</h2>
+						</a>
+						<span class="material-icons expand drop">
+							expand_more
+							</span>
+						</div>
+						<ul class="sub-menu">
+							<li><a href="./financial_receivables.html">Receivables</a></li>
+							<li><a href="./financial_receivablles_payout.html">Payouts</a></li>
+							<li><a href="./financial_credit_facitities.html">Credit Facilities</a></li>
+							<li><a href="#">Dashbord</a></li>
+							<li><a href="#">Profit & Loss</a></li>
+							<li><a href="./procurement_cash_flow_calculator.html">Cash Flow Calculator</a></li>
+						</ul>
+					</li>
+
+					<li>
+						<div class="icon-link">
+							<a href="#">
+								<span class="material-icons">
+									construction
+									</span>
+							<h2 class="nav-name">Construction Log Automation</h2>
+						</a>
+						<span class="material-icons drop">
+							expand_more
+							</span>
+						</div>
+						<ul class="sub-menu">
+							<li><a href="./construction_log.html">List Of Construction Log</a></li>
+						</ul>
+					</li>
+
+					<li>
+						<div class="icon-link">
+							<a href="#">
+								<span class="material-icons">
+									tips_and_updates
+									</span>
+							<h2 class="nav-name">Computer Vision Detection VR Modelling</h2>
+						</a>
+						<span class="material-icons drop">
+							expand_more
+							</span>
+						</div>
+						<ul class="sub-menu">
+							<li><a href="#">List Of Construction Log</a></li>
+						</ul>
+					</li>
+				</ul>
+			</nav>
+			</div>
+
+				<a href="#" class="log-out">
+					<span class="material-icons">
+						logout
+						</span>
+						<h3>Log out</h3>
+					</a>
+		</div>
+
+		<main class="main client_project">
+			<span class="material-icons menu-icon">
+				menu
+				</span>
+			<h1>RFQ Details</h1>
+
+			<div class="rfq buyer">
+				<h3>Buyer Information</h3>
+			</div>
+				<!-- Table -->
+				<div class="table-container">
+				<table class="client-list">
+					<thead>
+						<tr>
+							<th>Client Name</th>
+							<th>RFQ ID</th>
+							<th>Title</th>
+						</tr>
+					</thead>
+	
+					<tbody>
+						<tr>
+							<td>溢安建築⼯程有限公司 ( C004 )</td>
+							<td>RF-016</td>
+							<td>翡翠閣樓宇維修</td>
+						</tr>
+						<tr>
+							<th>Project Summary Description</th>
+							<td colspan="2">卑路乍街35A號堅尼地城海旁48~49號翡翠閣樓宇維修</td>
+						</tr>
+						<tr>
+							<th>Project Location</th>
+							<td colspan="2">卑路乍街35A號堅尼地城</td>
+						
+						</tr>
+						<tr>
+							<th>Project Goals</th>
+							<td colspan="2"></td>
+						</tr>
+						<tr>
+							<th>Person In Charge</th>
+							<th>Phone</th>
+							<th>Email</th>
+						</tr>
+						<tr>
+							<td>Oscar Pang</td>
+							<td>2778 9897</td>
+							<td>admin@yianconstruction.com</td>
+						</tr>
+
+						<tr>
+							<th>Date of RFQ Issue</th>
+							<td></td>
+							<th>Preferred Reply Date</th>
+						</tr>
+
+						<tr>
+							<td>25/07/2023</td>
+							<td></td>
+							<td>08/08/2023</td>
+						</tr>
+					</tbody>
+				</table>
+			</div>
+				<!-- Second Table -->
+				<div class="rfq buyer project_details">
+					<h3>Project Details</h3>
+				</div>
+					<!-- Table -->
+					<div class="table-container">
+					<table class="client-list">
+						<thead>
+							<tr>
+								<th>Project Details</th>
+								<td></td>
+								<td></td>
+							</tr>
+						</thead>
+		
+						<tbody>
+							<tr>
+								<th>Schematics Technical Requirements</th>
+								<td></td>
+								<td></td>
+								
+							</tr>
+							<tr>
+								<th>Delivery Requirements</th>
+								<td></td>
+								<td></td>
+							</tr>
+							<tr>
+								<th>Quality Assurance Requirement</th>
+								<td></td>
+								<td></td>
+							</tr>
+							<tr>
+								<th>Preferred Date Start</th>
+								<th>Scope Duration</th>
+								<th>Budget</th>
+							</tr>
+							<tr>
+								<td>Change</td>
+								<td>3 months</td>
+								<td>3,500,000</td>
+							</tr>
+						</tbody>
+					</table>
+				</div>
+					<div class="btn">
+						<button>Reply</button>
+					</div>
+		</main>
+	</div>
+	<script src="assets/js/script.js"></script>
+</body>
+</html>

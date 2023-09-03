@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+	<link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet">
+	<link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+	<div class="container">
+		<div class="sidebar">
+			<div class="top">
+				<div class="logo">
+					<img src="" alt="">
+					<h2>Admin Bord</h2>
+				</div>
+
+				<div class="close">
+					<span class="material-icons">
+						cancel
+						</span>
+				</div>
+			</div>
+
+			<div class="menu-container">
+			<nav class="nav">
+				<ul class="menu">
+					<li>
+						<div class="icon-link">
+							<a href="#">
+							<span class="material-icons">
+								analytics
+							</span>
+							<h2 class="nav-name">Quotation</h2>
+						</a>
+						<span class="material-icons drop">
+							expand_more
+							</span>
+						</div>
+						<ul class="sub-menu">
+							<li><a href="./index.html">Client List</a></li>
+							<li><a href="./quotion_request.html">Quotation Request</a></li>
+							<li><a href="./RFQ_replies.html">Quotations</a></li>
+							<li><a href="./cost_variables.html">Cost Variables</a></li>
+							<li><a href="./service.html">Service Offerrigs</a></li>
+						</ul>
+					</li>
+
+					<li>
+						<div class="icon-link">
+							<a href="#">
+								<span class="material-icons">
+									manage_history
+									</span>
+							<h2 class="nav-name">Project Management</h2>
+						</a>
+						<span class="material-icons drop">
+							expand_more
+							</span>
+						</div>
+						<ul class="sub-menu">
+							<li><a href="./project_management.html">Projects</a></li>
+						</ul>
+					</li>
+
+					<li class="Quotation">
+						<div class="icon-link menu-link">
+							<a href="#">
+								<span class="material-icons">
+									memory
+									</span>
+							<h2 class="nav-name">Procurement Management</h2>
+						</a>
+						<span class="material-icons drop">
+							expand_more
+							</span>
+						</div>
+						<ul class="sub-menu">
+							<li><a href="./procurement_management_material.html" class="sub-menu_active">Material/Equipments</a></li>
+							<li><a href="./procurement_material_comparison.html">Material Comparison</a></li>
+							<li><a href="./procurement_management_suppliers.html">Suppliers</a></li>
+							<li><a href="./procurement_purchase_order.html">Purchase Orders</a></li>
+							<li><a href="./procurement_contruction_qcdr.html">Contruction Quality Control Daily Report</a></li>
+						</ul>
+					</li>
+
+					<li>
+						<div class="icon-link">
+							<a href="#">
+								<span class="material-icons">
+									attach_money
+									</span>
+							<h2 class="nav-name">Financial & Projection</h2>
+						</a>
+						<span class="material-icons expand drop">
+							expand_more
+							</span>
+						</div>
+						<ul class="sub-menu">
+							<li><a href="./financial_receivables.html">Receivables</a></li>
+							<li><a href="./financial_receivablles_payout.html">Payouts</a></li>
+							<li><a href="./financial_credit_facitities.html">Credit Facilities</a></li>
+							<li><a href="#">Dashbord</a></li>
+							<li><a href="#">Profit & Loss</a></li>
+							<li><a href="./procurement_cash_flow_calculator.html">Cash Flow Calculator</a></li>
+						</ul>
+					</li>
+
+					<li>
+						<div class="icon-link">
+							<a href="#">
+								<span class="material-icons">
+									construction
+									</span>
+							<h2 class="nav-name">Construction Log Automation</h2>
+						</a>
+						<span class="material-icons drop">
+							expand_more
+							</span>
+						</div>
+						<ul class="sub-menu">
+							<li><a href="./construction_log.html">List Of Construction Log</a></li>
+						</ul>
+					</li>
+
+					<li>
+						<div class="icon-link">
+							<a href="#">
+								<span class="material-icons">
+									tips_and_updates
+									</span>
+							<h2 class="nav-name">Computer Vision Detection VR Modelling</h2>
+						</a>
+						<span class="material-icons drop">
+							expand_more
+							</span>
+						</div>
+						<ul class="sub-menu">
+							<li><a href="#">List Of Construction Log</a></li>
+						</ul>
+					</li>
+				</ul>
+			</nav>
+			</div>
+
+				<a href="#" class="log-out">
+					<span class="material-icons">
+						logout
+						</span>
+						<h3>Log out</h3>
+					</a>
+		</div>
+
+		<main class="main">
+			<span class="material-icons menu-icon">
+				menu
+				</span>
+			<h2 class="Service_name">Equipment / Building materials comparison table</h2>
+
+				<table class="client-list equipment_table">
+					<thead>
+						<tr>
+							<th>Component</th>
+							<th>Material</th>
+							<th>Thickness (cm)</th>
+							<th>Conductivity (W/m.K)</th>
+							<th>Density (Kg/m3)</th>
+							<th>Specific Heat (J/Kg.K)</th>
+						</tr>
+					</thead>
+	
+					<tbody>
+
+						<tr>
+							<th rowspan="2">Exterior Wall</th>
+							<td>Plaster</td>
+							<td>1.5</td>
+							<td>1.15</td>
+							<td>1950</td>
+							<td>653</td>
+						</tr>
+
+						<tr>
+							<td>Autoclaved aerated 
+								concrete</td>
+							<td>30.5</td>
+							<td>0.27</td>
+							<td>750</td>
+							<td>1000</td>
+						</tr>
+
+						<tr>
+							<th rowspan="2">Interior Wall</th>
+							<td>Aluminium</td>
+							<td>0.2</td>
+							<td>160.0</td>
+							<td>2800</td>
+							<td>2800</td>
+						</tr>
+
+						<tr>
+							<td>Extruded polystyrene</td>
+							<td>5.0</td>
+							<td>0.04</td>
+							<td>38</td>
+							<td>38</td>
+						</tr>
+
+						<tr>
+							<th rowspan="3">Roof</th>
+							<td>Polyethylene</td>
+							<td>0.2</td>
+							<td>0.33</td>
+							<td>220</td>
+							<td>2200</td>
+						</tr>
+
+						<tr>
+							<td>Slab</td>
+							<td>14.0</td>
+							<td>12.0</td>
+							<td>2100</td>
+							<td>880</td>
+						</tr>
+
+						<tr>
+							<td>Autoclaved aerated concrete</td>
+							<td>7.5</td>
+							<td>0.27</td>
+							<td>750</td>
+							<td>1000</td>
+						</tr>
+
+						<tr>
+							<th rowspan="4">Floor</th>
+							<td>Soil</td>
+							<td>170.0</td>
+							<td>1.14</td>
+							<td>1000</td>
+							<td>1282</td>
+						</tr>
+
+						<tr>
+							<td>Riprap</td>
+							<td>25.0</td>
+							<td>1.20</td>
+							<td>1000</td>
+							<td>800</td>
+						</tr>
+
+						<tr>
+							<td>Ground slab</td>
+							<td>10.0</td>
+							<td>2.00</td>
+							<td>2100</td>
+							<td>880</td>
+						</tr>
+
+						<tr>
+							<td>Screed</td>
+							<td>5.0</td>
+							<td>1.35</td>
+							<td>1800</td>
+							<td>1000</td>
+						</tr>
+
+						<tr>
+							<th>Ply Wood</th>
+							<td>Wood</td>
+							<td>2.0</td>
+							<td>0.11</td>
+							<td>545</td>
+							<td>1420</td>
+						</tr>
+					</tbody>
+				</table>
+		</main>
+	</div>
+	<script src="assets/js/script.js"></script>
+</body>
+</html>

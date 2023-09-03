@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+	<link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet">
+	<link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+	<div class="container">
+		<div class="sidebar">
+			<div class="top">
+				<div class="logo">
+					<img src="" alt="">
+					<h2>Admin Bord</h2>
+				</div>
+
+				<div class="close">
+					<span class="material-icons">
+						cancel
+						</span>
+				</div>
+			</div>
+
+			<div class="menu-container">
+			<nav class="nav">
+				<ul class="menu">
+					<li class="Quotation">
+						<div class="icon-link menu-link">
+							<a href="#">
+							<span class="material-icons">
+								analytics
+							</span>
+							<h2 class="nav-name">Quotation</h2>
+						</a>
+						<span class="material-icons drop">
+							expand_more
+							</span>
+						</div>
+						<ul class="sub-menu">
+							<li><a href="./index.html">Client List</a></li>
+							<li><a href="./quotion_request.html">Quotation Request</a></li>
+							<li><a href="./RFQ_replies.html" class="sub-menu_active">Quotations</a></li>
+							<li><a href="./cost_variables.html">Cost Variables</a></li>
+							<li><a href="./service.html">Service Offerrigs</a></li>
+						</ul>
+					</li>
+
+					<li>
+						<div class="icon-link">
+							<a href="#">
+								<span class="material-icons">
+									manage_history
+									</span>
+							<h2 class="nav-name">Project Management</h2>
+						</a>
+						<span class="material-icons drop">
+							expand_more
+							</span>
+						</div>
+						<ul class="sub-menu">
+							<li><a href="./project_management.html">Projects</a></li>
+						</ul>
+					</li>
+
+					<li>
+						<div class="icon-link">
+							<a href="#">
+								<span class="material-icons">
+									memory
+									</span>
+							<h2 class="nav-name">Procurement Management</h2>
+						</a>
+						<span class="material-icons drop">
+							expand_more
+							</span>
+						</div>
+						<ul class="sub-menu">
+							<li><a href="./procurement_management_material.html">Material/Equipments</a></li>
+							<li><a href="./procurement_material_comparison.html">Material Comparison</a></li>
+							<li><a href="./procurement_management_suppliers.html">Suppliers</a></li>
+							<li><a href="./procurement_purchase_order.html">Purchase Orders</a></li>
+							<li><a href="./procurement_contruction_qcdr.html">Contruction Quality Control Daily Report</a></li>
+						</ul>
+					</li>
+
+					<li>
+						<div class="icon-link">
+							<a href="#">
+								<span class="material-icons">
+									attach_money
+									</span>
+							<h2 class="nav-name">Financial & Projection</h2>
+						</a>
+						<span class="material-icons expand drop">
+							expand_more
+							</span>
+						</div>
+						<ul class="sub-menu">
+							<li><a href="./financial_receivables.html">Receivables</a></li>
+							<li><a href="./financial_receivablles_payout.html">Payouts</a></li>
+							<li><a href="./financial_credit_facitities.html">Credit Facilities</a></li>
+							<li><a href="#">Dashbord</a></li>
+							<li><a href="#">Profit & Loss</a></li>
+							<li><a href="./procurement_cash_flow_calculator.html">Cash Flow Calculator</a></li>
+						</ul>
+					</li>
+
+					<li>
+						<div class="icon-link">
+							<a href="#">
+								<span class="material-icons">
+									construction
+									</span>
+							<h2 class="nav-name">Construction Log Automation</h2>
+						</a>
+						<span class="material-icons drop">
+							expand_more
+							</span>
+						</div>
+						<ul class="sub-menu">
+							<li><a href="./construction_log.html">List Of Construction Log</a></li>
+						</ul>
+					</li>
+
+					<li>
+						<div class="icon-link">
+							<a href="#">
+								<span class="material-icons">
+									tips_and_updates
+									</span>
+							<h2 class="nav-name">Computer Vision Detection VR Modelling</h2>
+						</a>
+						<span class="material-icons drop">
+							expand_more
+							</span>
+						</div>
+						<ul class="sub-menu">
+							<li><a href="#">List Of Construction Log</a></li>
+						</ul>
+					</li>
+				</ul>
+			</nav>
+			</div>
+
+				<a href="#" class="log-out">
+					<span class="material-icons">
+						logout
+						</span>
+						<h3>Log out</h3>
+					</a>
+		</div>
+
+		<main class="main">
+			<span class="material-icons menu-icon">
+				menu
+				</span>
+			<h1>Quotation Details</h1>
+			<h3>Quotation Number: Q-007</h3>
+			<div class="quotation_date">
+				<h4>RFQ ID: RF-009</h4>
+				<h4>Date: 31/06/2023</h4>
+			</div>
+			<div>
+				<p>⼯程項⽬: <span>LED廣告牌入則</span></p>
+				<p>⼯程地址：<span>尖沙咀彌敦道與勘富利⼠道交畀Citic Bank⼆樓靠牆招牌</span></p>
+				<p>⼯程內容：<span>⼈則（⼀項）所提供之服務</span></p>
+				<p>To: <br>
+					<span>宏⾼⼯程(香港)有限公司</span>
+				</p>
+			</div>
+			<div class="rfq">
+				<p>Prepared body: <br>
+					Warwick Enterprise<br>
+					Jimmy Lau
+				</p>
+				
+				
+			</div>
+			<div class="table-container">
+				<!-- Table -->
+				<table class="client-list">
+					<thead>
+						<tr>
+							<th>Service/Item</th>
+							<th>Unit Price</th>
+							<th>Quality</th>
+							<th>Work Duration</th>
+							<th>Sub Total</th>
+						</tr>
+					</thead>
+	
+					<tbody>
+						<tr>
+							<td>認可⼈仕A.P.之簽署</td>
+							<td>9,500</td>
+							<td>1</td>
+							<td>/</td>
+							<td>9,500</td>
+						</tr>
+						<tr>
+							<td>結構⼯程師之簽署包括所需之計算數據和附加圖則（但不包括政府
+								屋宇署所收取的任何圖則費⽤）</td>
+							<td>56,500</td>
+							<td>1</td>
+							<td>/</td>
+							<td>56,500</td>
+						</tr>
+						<tr>
+							<td>RGBG注冊建築承建商之簽署</td>
+							<td>31,000</td>
+							<td>1</td>
+							<td>/</td>
+							<td>31,000</td>
+						</tr>
+						<tr>
+							<td>提供⼀切入則所需⽂書⼯作，例如填寫表格開⼯完⼯，複印等</td>
+							<td>41,000</td>
+							<td>1</td>
+							<td>/</td>
+							<td>41,000</td>
+						</tr>
+						<tr>
+							<td></td>
+							<td></td>
+							<td></td>
+							<td></td>
+							<th>138,000</th>
+						</tr>
+					</tbody>
+				</table>
+			</div>
+
+				<div class="quotation_footer">
+					<div>
+						<p>Expected Delivery: Within 6 months</p>
+						<p>Validity: 360 days fro the date of this quotation</p>
+						<p>Payment Terms:</p>
+					</div>
+
+					<div class="quotation_amount">
+						<div>
+							<p>Untaxed Amount:</p>
+							<p>Tax: </p>
+							<h3>Quote Total: </h3>
+						</div>
+						<div class="quotation_amount2">
+							<p>$138,000</p>
+							<p>0</p>
+							<h3>$138,000</h3>
+						</div>
+					</div>
+
+				</div>
+		</main>
+	</div>
+	<script src="assets/js/script.js"></script>
+</body>
+</html>

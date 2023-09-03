@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+	<link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet">
+	<link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+	<div class="container">
+		<div class="sidebar">
+			<div class="top">
+				<div class="logo">
+					<img src="" alt="">
+					<h2>Admin Bord</h2>
+				</div>
+
+				<div class="close">
+					<span class="material-icons">
+						cancel
+						</span>
+				</div>
+			</div>
+
+			<div class="menu-container">
+				<nav class="nav">
+					<ul class="menu">
+						<li class="Quotation">
+							<div class="icon-link menu-link">
+								<a href="#">
+								<span class="material-icons">
+									analytics
+								</span>
+								<h2 class="nav-name">Quotation</h2>
+							</a>
+							<span class="material-icons drop">
+								expand_more
+								</span>
+							</div>
+							<ul class="sub-menu">
+								<li><a href="./index.html" class="sub-menu_active">Client List</a></li>
+								<li><a href="./quotion_request.html">Quotation Request</a></li>
+								<li><a href="./RFQ_replies.html">Quotations</a></li>
+								<li><a href="./cost_variables.html">Cost Variables</a></li>
+								<li><a href="./service.html">Service Offerrigs</a></li>
+							</ul>
+						</li>
+
+						<li>
+							<div class="icon-link">
+								<a href="#">
+									<span class="material-icons">
+										manage_history
+										</span>
+								<h2 class="nav-name">Project Management</h2>
+							</a>
+							<span class="material-icons drop">
+								expand_more
+								</span>
+							</div>
+							<ul class="sub-menu">
+								<li><a href="./project_management.html">Projects</a></li>
+							</ul>
+						</li>
+
+						<li>
+							<div class="icon-link">
+								<a href="#">
+									<span class="material-icons">
+										memory
+										</span>
+								<h2 class="nav-name">Procurement Management</h2>
+							</a>
+							<span class="material-icons drop">
+								expand_more
+								</span>
+							</div>
+							<ul class="sub-menu">
+								<li><a href="./procurement_management_material.html">Material/Equipments</a></li>
+								<li><a href="./procurement_material_comparison.html">Material Comparison</a></li>
+								<li><a href="./procurement_management_suppliers.html">Suppliers</a></li>
+								<li><a href="./procurement_purchase_order.html">Purchase Orders</a></li>
+								<li><a href="./procurement_contruction_qcdr.html">Contruction Quality Control Daily Report</a></li>
+							</ul>
+						</li>
+
+						<li>
+							<div class="icon-link">
+								<a href="#">
+									<span class="material-icons">
+										attach_money
+										</span>
+								<h2 class="nav-name">Financial & Projection</h2>
+							</a>
+							<span class="material-icons expand drop">
+								expand_more
+								</span>
+							</div>
+							<ul class="sub-menu">
+								<li><a href="./financial_receivables.html">Receivables</a></li>
+								<li><a href="./financial_receivablles_payout.html">Payouts</a></li>
+								<li><a href="./financial_credit_facitities.html">Credit Facilities</a></li>
+								<li><a href="#">Dashbord</a></li>
+								<li><a href="#">Profit & Loss</a></li>
+								<li><a href="./procurement_cash_flow_calculator.html">Cash Flow Calculator</a></li>
+							</ul>
+						</li>
+
+						<li>
+							<div class="icon-link">
+								<a href="#">
+									<span class="material-icons">
+										construction
+										</span>
+								<h2 class="nav-name">Construction Log Automation</h2>
+							</a>
+							<span class="material-icons drop">
+								expand_more
+								</span>
+							</div>
+							<ul class="sub-menu">
+								<li><a href="./construction_log.html">List Of Construction Log</a></li>
+							</ul>
+						</li>
+
+						<li>
+							<div class="icon-link">
+								<a href="#">
+									<span class="material-icons">
+										tips_and_updates
+										</span>
+								<h2 class="nav-name">Computer Vision Detection VR Modelling</h2>
+							</a>
+							<span class="material-icons drop">
+								expand_more
+								</span>
+							</div>
+							<ul class="sub-menu">
+								<li><a href="#">List Of Construction Log</a></li>
+							</ul>
+						</li>
+					</ul>
+				</nav>
+				</div>
+
+				<a href="#" class="log-out">
+					<span class="material-icons">
+						logout
+						</span>
+						<h3>Log out</h3>
+					</a>
+		</div>
+
+		<main class="main">
+			<span class="material-icons menu-icon">
+				menu
+				</span>
+			<h1>Client List</h1>
+
+			<div class="btn">
+				<button>Create</button>
+			</div>
+			
+			<div class="table-container">
+			<!-- Table -->
+			<table class="client-list">
+				<thead>
+					<tr>
+						<th>Client ID</th>
+						<th>Client Name</th>
+						<th>PIC</th>
+						<th>Address</th>
+						<th>Contact No.</th>
+						<th>Email</th>
+						<th>RFQ Count</th>
+						<th>Quotation Count</th>
+						<th>Action</th>
+					</tr>
+				</thead>
+
+				<tbody>
+					<tr>
+						<td>C001</td>
+						<td>德昌(⽂記)建築⼯程有限公
+							司</td>
+						<td>Edwin Au 
+							</td>
+						<td>九⿓⼟瓜灣道82-84號環凱廣場9樓
+							903B室</td>
+						<td>2954 9992</td>
+						<td>admin@wenji.com</td>
+						<td>8</td>
+						<td>8</td>
+						<td><a href="./client.html">View Details</a></td>
+					</tr>
+					<tr>
+						<td>C002</td>
+						<td>Tsun Tao International 
+							Construction Ltd</td>
+						<td>John Lo</td>
+						<td>5/F,Hong Kong Trade Centre,
+							161-167 Des Voeux Road,
+							Central,
+							Hong Kong.</td>
+						<td>2116 8886</td>
+						<td>admin@tsuntaoltd.com</td>
+						<td>2</td>
+						<td>2</td>
+						<td><a href="#">View Details</a></td>
+					</tr>
+					<tr>
+						<td>C003</td>
+						<td>逸昇建築有限公司</td>
+						<td>張志⽂</td>
+						<td>Rm 1108, 11/F.,Fortune Commml 
+							Bldg.,362 Sha Tsui Rd,Tsuen Wan, 
+							Hong Kong</td>
+						<td>2886 7876</td>
+						<td>admin@yishing.com</td>
+						<td>1</td>
+						<td>1</td>
+						<td><a href="#">View Details</a></td>
+					</tr>
+					<tr>
+						<td>C004</td>
+						<td>溢安建築⼯程有限公司</td>
+						<td>Oscar Pang</td>
+						<td>Tsim Sha Tsui, Chatham Rd S, 87-105
+							號5樓29-33室 Beverley Commercial 
+							Centre</td>
+						<td>2778 9897</td>
+						<td>admin@yianconstruction.com</td>
+						<td>2</td>
+						<td>1</td>
+						<td><a href="#">View Details</a></td>
+					</tr>
+					<tr>
+						<td>C005</td>
+						<td>Hang Chit Engineering Co</td>
+						<td>Johnathan 
+							Yip</td>
+						<td>Tuen Mun Industrial Centre, 76號 Pui 
+							To Rd, San Hui</td>
+						<td>6638 9765</td>
+						<td>hangchit@engineering.com</td>
+						<td>3</td>
+						<td>2</td>
+						<td><a href="#">View Details</a></td>
+					</tr>
+					<tr>
+						<td>C006</td>
+						<td>Rainbow Decoration 
+							Engineering Ltd</td>
+						<td>David Tsang</td>
+						<td>Unit R, 4/F, Phase 3 Kwun Tong 
+							Industrial Centre 448-458 Kwun 
+							Tong Road Kwun Tong, Kowloon, 
+							Hong Kong</td>
+						<td>2734 6723</td>
+						<td>rainbowdecoration@itd.com</td>
+						<td>3</td>
+						<td>1</td>
+						<td><a href="#">View Details</a></td>
+					</tr>
+					<tr>
+						<td>C007</td>
+						<td>標威有限公司</td>
+						<td>Joseph Lam</td>
+						<td>香港九⿓觀塘鴻圖道45號 宏光⼯業⼤
+							廈13字樓E室</td>
+						<td>35496898</td>
+						<td>wei@wei.com</td>
+						<td>2</td>
+						<td>1</td>
+						<td><a href="#">View Details</a></td>
+					</tr>
+					<tr>
+						<td>C008</td>
+						<td>宏⾼⼯程(香港)有限公司</td>
+						<td>Kyle Wong</td>
+						<td>香港新界葵涌⼤連排道152-160號
+							⾦⿓⼤廈1座17樓L室</td>
+						<td>3483 1105</td>
+						<td>admin@wengohk.com</td>
+						<td>2</td>
+						<td>2</td>
+						<td><a href="#">View Details</a></td>
+					</tr>
+				</tbody>
+			</table>
+		</div>
+		</main>
+	</div>
+	<script src="assets/js/script.js"></script>
+</body>
+</html>

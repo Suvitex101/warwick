@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+	<link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet">
+	<link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+	<div class="container">
+		<div class="sidebar">
+			<div class="top">
+				<div class="logo">
+					<img src="" alt="">
+					<h2>Admin Bord</h2>
+				</div>
+
+				<div class="close">
+					<span class="material-icons">
+						cancel
+						</span>
+				</div>
+			</div>
+
+			<div class="menu-container">
+			<nav class="nav">
+				<ul class="menu">
+					<li>
+						<div class="icon-link">
+							<a href="#">
+							<span class="material-icons">
+								analytics
+							</span>
+							<h2 class="nav-name">Quotation</h2>
+						</a>
+						<span class="material-icons drop">
+							expand_more
+							</span>
+						</div>
+						<ul class="sub-menu">
+							<li><a href="./index.html">Client List</a></li>
+							<li><a href="./quotion_request.html">Quotation Request</a></li>
+							<li><a href="./RFQ_replies.html">Quotations</a></li>
+							<li><a href="./cost_variables.html">Cost Variables</a></li>
+							<li><a href="./service.html">Service Offerrigs</a></li>
+						</ul>
+					</li>
+
+					<li>
+						<div class="icon-link">
+							<a href="#">
+								<span class="material-icons">
+									manage_history
+									</span>
+							<h2 class="nav-name">Project Management</h2>
+						</a>
+						<span class="material-icons drop">
+							expand_more
+							</span>
+						</div>
+						<ul class="sub-menu">
+							<li><a href="./project_management.html">Projects</a></li>
+						</ul>
+					</li>
+
+					<li class="Quotation">
+						<div class="icon-link menu-link">
+							<a href="#">
+								<span class="material-icons">
+									memory
+									</span>
+							<h2 class="nav-name">Procurement Management</h2>
+						</a>
+						<span class="material-icons drop">
+							expand_more
+							</span>
+						</div>
+						<ul class="sub-menu">
+							<li><a href="./procurement_management_material.html">Material/Equipments</a></li>
+							<li><a href="./procurement_material_comparison.html">Material Comparison</a></li>
+							<li><a href="./procurement_management_suppliers.html">Suppliers</a></li>
+							<li><a href="./procurement_purchase_order.html" class="sub-menu_active">Purchase Orders</a></li>
+							<li><a href="./procurement_contruction_qcdr.html">Contruction Quality Control Daily Report</a></li>
+						</ul>
+					</li>
+
+					<li>
+						<div class="icon-link">
+							<a href="#">
+								<span class="material-icons">
+									attach_money
+									</span>
+							<h2 class="nav-name">Financial & Projection</h2>
+						</a>
+						<span class="material-icons expand drop">
+							expand_more
+							</span>
+						</div>
+						<ul class="sub-menu">
+							<li><a href="./financial_receivables.html">Receivables</a></li>
+							<li><a href="./financial_receivablles_payout.html">Payouts</a></li>
+							<li><a href="./financial_credit_facitities.html">Credit Facilities</a></li>
+							<li><a href="#">Dashbord</a></li>
+							<li><a href="#">Profit & Loss</a></li>
+							<li><a href="./procurement_cash_flow_calculator.html">Cash Flow Calculator</a></li>
+						</ul>
+					</li>
+
+					<li>
+						<div class="icon-link">
+							<a href="#">
+								<span class="material-icons">
+									construction
+									</span>
+							<h2 class="nav-name">Construction Log Automation</h2>
+						</a>
+						<span class="material-icons drop">
+							expand_more
+							</span>
+						</div>
+						<ul class="sub-menu">
+							<li><a href="./construction_log.html">List Of Construction Log</a></li>
+						</ul>
+					</li>
+
+					<li>
+						<div class="icon-link">
+							<a href="#">
+								<span class="material-icons">
+									tips_and_updates
+									</span>
+							<h2 class="nav-name">Computer Vision Detection VR Modelling</h2>
+						</a>
+						<span class="material-icons drop">
+							expand_more
+							</span>
+						</div>
+						<ul class="sub-menu">
+							<li><a href="#">List Of Construction Log</a></li>
+						</ul>
+					</li>
+				</ul>
+			</nav>
+			</div>
+
+				<a href="#" class="log-out">
+					<span class="material-icons">
+						logout
+						</span>
+						<h3>Log out</h3>
+					</a>
+		</div>
+
+		<main class="main">
+			<span class="material-icons menu-icon">
+				menu
+				</span>
+			<h1>Purchase Order</h1>
+
+			<div class="rfq filter_btn cost_btn">
+				<div class="btn">
+					<button class="filter"><span class="material-icons">
+						tune
+						</span> <p>Filter</p></button>
+					<button><a href="./procurement_create_purchase_order.html">Create</a></button>
+				</div>
+			</div>
+			<div class="table-container">
+				<!-- Table -->
+				<table class="client-list">
+					<thead>
+						<tr>
+							<th>PO Ref.</th>
+							<th>Order Date</th>
+							<th>Supplier</th>
+							<th>Items</th>
+							<th>Total Amount</th>
+							<th>PO Status</th>
+							<th>Invoice#</th>
+							<th>Logistics</th>
+							<th>Delivery Status</th>
+						</tr>
+					</thead>
+	
+					<tbody>
+						<tr>
+							<td><a href="./procurement_purchase_order_details.html">PO-0340</a></td>
+							<td>14/08/2023</td>
+							<td>Shandong Jinyuan Metal Technology Co., Ltd</td>
+							<td>Corrugated Roof Sheet</td>
+							<td>$7,000</td>
+							<td>Open</td>
+							<td>77TGBH</td> 
+							<td>UPS
+								(#7yh89u)</td>
+							<td>Delivered 30/08/2023</td>
+							
+						</tr>
+						<tr>
+							<td><a href="#">PO-0339</a></td>
+							<td>14/08/2023</td>
+							<td>Wuxi Tianzhu Special Steel Co., Ltd</td>
+							<td>Steel Rebar</td>
+							<td>$22,000</td>
+							<td>Open</td>
+							<td>76RFCE</td>
+							<td>UPS
+								(#7rf32y)</td>
+							<td>Delivered 25/08/2023</td>
+						</tr>
+						<tr>
+							<td><a href="#">PO-0338</a></td>
+							<td>13/08/2023</td>
+							<td>Beijing Zhongcaiwanxin Science & Technology Co,.LTD</td>
+							<td>Plastic Double Wall Corrugated DWC 
+								Drain Culvert Pipe</td>
+							<td>$950</td>
+							<td>Open</td>
+							<td>76RFCE</td>
+							<td>UPS
+								(#7rf32y)</td>
+							<td>Delivered 25/08/2023</td>
+						</tr>
+						<tr>
+							<td><a href="#">PO-0337</a></td>
+							<td>13/08/2023</td>
+							<td>Beijing Zhongcaiwanxin Science & Technology Co,.LTD</td>
+							<td>Water Pump</td>
+							<td>$22,000</td>
+							<td>Open</td>
+							<td>46REDC</td>
+							<td>UPS
+								(#5gb60k)</td>
+							<td>Delivered 25/08/2023</td>
+						</tr>
+						<tr>
+							<td><a href="#">PO-0336</a></td>
+							<td>11/08/2023</td>
+							<td>Grandfar Pumps Co.,Ltd</td>
+							<td>irty water drainage sump submersible 
+								water pump</td>
+							<td>$3,300</td>
+							<td>Closed</td>
+							<td>89YHBN</td>
+							<td>UPS
+								(#9gt43n)</td>
+							<td>Delivered 23/08/2023</td>
+						</tr>
+						<tr>
+							<td><a href="#">PO-0335</a></td>
+							<td>11/08/2023</td>
+							<td>Grandfar Pumps Co.,Ltd</td>
+							<td>Stainless steel submersible motor borehole 
+								pump</td>
+							<td>$14,000</td>
+							<td>Closed</td>
+							<td>76RFVG</td>
+							<td>UPS
+								(#9jk90k)</td>
+							<td>Delivered 22/08/2023</td>
+						</tr>
+
+						<tr>
+							<td><a href="#">PO-0334</a></td>
+							<td>10/08/2023</td>
+							<td>Zhejiang Emeads Tools Co., Ltd.</td>
+							<td>Electric Hydraulic Armoured Cable Cutter</td>
+							<td>$12,000</td>
+							<td>Closed</td>
+							<td>98UJNB</td>
+							<td>UPS
+								(#5hk93p)</td>
+							<td>Delivered 22/08/2023</td>
+						</tr>
+
+						<tr>
+							<td><a href="#">PO-0333</a></td>
+							<td>09/08/2023</td>
+							<td>Nantong Kundi Power Tools Co., Ltd</td>
+							<td>Electric Angle Grinder</td>
+							<td>$800</td>
+							<td>Closed</td>
+							<td>45TGBV</td>
+							<td>UPS
+								(#7jp54u)</td>
+							<td>Delivered 20/08/2023</td>
+						</tr>
+
+						<tr>
+							<td><a href="#">PO-0332</a></td>
+							<td>05/08/2023</td>
+							<td>Hebei Zhongbo Ruike Instrument Manufacturing Co.,Ltd</td>
+							<td>Cement Mortar Mixer</td>
+							<td>$3,600</td>
+							<td>Closed</td>
+							<td>76OKMN</td>
+							<td>UPS
+								(#8kb99g)</td>
+							<td>Delivered 20/08/2023</td>
+						</tr>
+
+						<tr>
+							<td><a href="#">PO-0331</a></td>
+							<td>05/08/2023</td>
+							<td>Hebei Zhongbo Ruike Instrument Manufacturing Co.,Ltd</td>
+							<td>Quarry Conveyor Belt Rollers</td>
+							<td>$2,000</td>
+							<td>Closed</td>
+							<td>32TGBN</td>
+							<td>UPS
+								(#7ln45w)</td>
+							<td>Delivered 19/08/2023</td>
+						</tr>
+					</tbody>
+				</table>
+			</div>
+		</main>
+	</div>
+	<script src="assets/js/script.js"></script>
+</body>
+</html>
